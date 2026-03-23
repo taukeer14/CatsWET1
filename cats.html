@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>All About Cats</title>
+
+<style>
+
+/* Smooth Scroll */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Body */
+body {
+  font-family: Arial, sans-serif;
+  background: linear-gradient(#fff9db, #fff3b0);
+  margin: 0;
+}
+
+/* Header */
+header {
+  background-color: #ffe066;
+  padding: 25px;
+  text-align: center;
+  font-size: 32px;
+  font-weight: bold;
+  border-bottom: 3px solid #e6b800;
+  animation: slideDown 1s ease;
+}
+
+/* Navigation */
+nav {
+  background-color: #fff3b0;
+  padding: 12px;
+  text-align: center;
+  animation: fadeIn 2s;
+}
+
+nav a {
+  margin: 10px;
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+nav a:hover {
+  color: #e6b800;
+  transform: scale(1.1);
+}
+
+/* Sections */
+section {
+  padding: 40px;
+  opacity: 0;
+  transform: translateY(40px);
+  animation: fadeUp 1s ease forwards;
+}
+
+section:nth-child(3) { animation-delay: 0.3s; }
+section:nth-child(4) { animation-delay: 0.6s; }
+section:nth-child(5) { animation-delay: 0.9s; }
+section:nth-child(6) { animation-delay: 1.2s; }
+
+h2 {
+  color: #b38f00;
+}
+
+/* Images */
+img {
+  width: 300px;
+  border-radius: 12px;
+  margin-top: 15px;
+  transition: 0.4s;
+}
+
+img:hover {
+  transform: scale(1.1);
+}
+
+/* Animations */
+@keyframes slideDown {
+  from { transform: translateY(-50px); opacity: 0; }
+  to { transform: translateY(0); opacity: 1; }
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes fadeUp {
+  to { opacity: 1; transform: translateY(0); }
+}
+
+</style>
+
+</head>
+
+<body>
+
+<header>
+🐱 All About Cats 🐱
+</header>
+
+<!-- Index -->
+<nav>
+  <a href="#about">What are Cats?</a>
+  <a href="#habitat">Natural Habitat</a>
+  <a href="#breeds">Breeds and Types</a>
+  <a href="#love">Love for Humans</a>
+</nav>
+
+<!-- Section 1 -->
+<section id="about">
+<h2>What are Cats?</h2>
+<p>Cats are small, carnivorous mammals that are often kept as pets. They are known for their agility, playfulness, and hunting skills.</p>
+<img src="https://images.unsplash.com/photo-1518791841217-8f162f1e1131">
+</section>
+
+<!-- Section 2 -->
+<section id="habitat">
+<h2>Natural Habitat</h2>
+<p>Cats can live in forests, grasslands, and even cities. Domestic cats easily adapt to living with humans.</p>
+<img src="https://images.unsplash.com/photo-1592194996308-7b43878e84a6">
+</section>
+
+<!-- Section 3 -->
+<section id="breeds">
+<h2>Breeds and Types</h2>
+<p>Popular breeds include Persian, Siamese, Bengal, and Maine Coon. Each breed has unique features and personality.</p>
+<img src="https://images.unsplash.com/photo-1574158622682-e40e69881006">
+</section>
+
+<!-- Section 4 -->
+<section id="love">
+<h2>Love for Humans</h2>
+<p>Cats show love by purring, rubbing, and staying close to their owners. They are loyal and comforting companions.</p>
+<img src="https://images.unsplash.com/photo-1519052537078-e6302a4968d4">
+</section>
+
+</body>
+</html>
